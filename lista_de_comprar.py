@@ -1,10 +1,3 @@
-import statistics
-
-data1 = [1,2,6,5,8,9,2]
-
-x = statistics.mean(data1)
-print(x)
-
 
 def listas_de_compras(pessoa, *args):
     print('lista de compra de: ' + pessoa)
@@ -31,3 +24,10 @@ def item(**kwargs):
         print(k)
 
 item(nome='groger', id=1)
+
+def imprimir_qualquer_coisa(*args):
+    for numero,item in enumerate(args):
+        print(str(numero) + '.' +item)
+
+imprimir_qualquer_coisa('maça', 'nataçao','pastel')
+
